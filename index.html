@@ -1,1 +1,138 @@
-Esraa Portfolio
+<!--doctype html-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Esra'a Portfolio</title>
+    <link href='./style.css' rel='stylesheet'>
+
+
+    <!--using FontAwesome---------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+    <!--style----->
+    <style>
+        body {
+            font-family: poppins;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <!--navigation------------------------->
+        <nav>
+            <!--logo-->
+            <a href="#" class="logo">Full Stack Developer</a>
+            <!--menu-->
+            <ul>
+                <li><a href="#Home" class="active">Home</a></li>
+                <li><a href="#About">About me</a></li>
+                <li><a href="#My Skills">My Skills</a></li>
+                <li><a href="#Contact">Contact me</a></li>
+                <!-- <li><a href="#">Team</a></li> -->
+            </ul>
+            <!--bars--------------->
+            <div class="toggle"></div>
+
+        </nav>
+
+        <!--text----------------------->
+        <div class="text-container" id="Home">
+            <p>Hello,</p>
+            <p>I&#8217;M ESRA'A</p>
+            <p>Full Stack Developer</p>
+            <!-- <button class="hire-btn">Hire me</button>
+            <button class="down-cv">Download CV</button> -->
+        </div>
+        <!--model---------------------->
+        <img alt="photo" class="model" src="./images/esraa.png">
+    </section>
+    <div class="about-container" id="About">
+        <!--img-->
+        <img src="./images/myphoto.jpg" />
+        <!--about-me-text-->
+        <div class="about-text">
+            <p>About Me</p>
+            <p>Full Stack Developer</p>
+            <p>Hello,My name is Esra'a Al-Malkawi. I am a Devolper.If you have any Project or if you
+                want make a software for your business conatact me.I will make it as soon as possibale.You will really
+                like my work,if you don&#8217;t i will change it until you like it I will give you Satisfaction result.
+            </p>
+
+            <a href="https://www.canva.com/design/DAEkNFXFu_Q/9VCGnUh4-kL4WqYSEXhroA/edit"> <button>My
+                    CV</button>
+            </a>
+        </div>
+    </div>
+
+    <!--services-container---------------------------->
+    <div class="services ">
+        <!--text-->
+        <div class="services-text" id="My Skills">
+            <p>technical Skills</p>
+        </div>
+        <div class="box-container">
+            <!--1------------->
+            <div class="box-1">
+                <span>1</span>
+                <h3 class="heading"> Web Development with React</h3>
+                <p class="details">I can make a website for your business with React using different tools like
+                    CSS,HTML,Bootstrap,Yarn and JavaScript
+                </p>
+                <!-- <button>Read More</button> -->
+            </div>
+            <!--2------------->
+            <div class="box-2">
+                <span>2</span>
+                <h3 class="heading"> Application Devoloment with React Native</h3>
+                <p class="details">I can make an Application for your business with React Native using different tools
+                    like Native-base ,React-native and JavaScript</p>
+                <!-- <button>Read More</button> -->
+            </div>
+            <!--3------------->
+            <div class="box-3">
+                <span>3</span>
+                <h3 class="heading">Backend Development with express</h3>
+                <p class="details">i can make backend and data-base for your website with Express using different tools
+                    like Sequelize ,SQL-shell, Express-Node and JavaScript</p>
+                <!-- <button>Read More</button> -->
+            </div>
+            <!--social-attach-bar-->
+            <div class="social">
+                <a href="#https://www.facebook.com/esraa.malkawe/"><i class="fab fa-facebook-f"></i></a>
+                <a href="#https://github.com/esraamalkawi"><i class="fab fa-github"></i></a>
+                <a href="#https://www.instagram.com/esraamalkawe/"><i class="fab fa-instagram"></i></a>
+                <!-- <a href="mailto:esraamalkawi462@gmail.com"><i class="fab fa-google"></i></a> -->
+                <!-- <a href="esraamalkawi462@gmail.com"><i class="fab fa-google"></i></a> -->
+            </div>
+        </div>
+
+
+        <div class="contact-me" id="Contact">
+            <p>Contact me</p>
+            <ul>
+                <li>Phone number : +962 777 691 373</li>
+                <li> Adress : Amman-jubaiha </li>
+                <li>Email : esraamalkawi462@gmail.com </li>
+
+            </ul>
+        </div>
+
+    </div>
+    <!--JQUery-------------------->
+    <script type="text/javascript" src="js/JQuery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.toggle').click(function () {
+                $('.toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+</body>
+
+</html>
